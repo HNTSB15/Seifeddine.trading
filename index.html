@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saifeddine – Forex & Crypto Trading Manager</title>
+  <link rel="icon" type="image/webp" href="Logo.webp" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+ 
+  <!-- NAV -->
+  <nav class="nav" id="navbar">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo" aria-label="Saifeddine Boumaza Trading">
+        <img src="Logo.webp" alt="Saifeddine Trading Logo" class="nav__logo-img" />
+        <div class="nav__logo-text">
+          <span class="nav__logo-name">Saifeddine</span>
+          <span class="nav__logo-sub">Forex &amp; Crypto</span>
+        </div>
+      </a>
+      <ul class="nav__links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#clients">Clients</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button type="button" class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+        <svg class="theme-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+      </button>
+      <button type="button" class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+ 
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero__bg">
+      <div class="hero__grid"></div>
+    </div>
+    <div class="hero__content">
+      <p class="hero__greeting">Welcome to</p>
+      <h1 class="hero__name">Saifeddine Boumaza</h1>
+      <div class="hero__roles">
+        <span class="hero__role" id="typed-role"></span><span class="cursor">|</span>
+      </div>
+      <p class="hero__bio">
+        Professional forex and cryptocurrency trading manager with proven track record in 
+        managing investor accounts and generating consistent returns through strategic trading.
+      </p>
+      <div class="hero__cta">
+        <a href="#projects" class="btn btn--primary">View Trading Records</a>
+        <a href="#contact" class="btn btn--outline">Invest Now</a>
+      </div>
+      <div class="hero__features">
+        <article class="feature-card">
+          <div class="feature-card__icon">🚀</div>
+          <div>
+            <p class="feature-card__label">Fast Execution</p>
+            <p class="feature-card__text">Trade with speed and precision across forex and crypto markets.</p>
+          </div>
+        </article>
+        <article class="feature-card">
+          <div class="feature-card__icon">💼</div>
+          <div>
+            <p class="feature-card__label">Trusted Strategy</p>
+            <p class="feature-card__text">Proven risk-managed systems designed for consistent returns.</p>
+          </div>
+        </article>
+        <article class="feature-card">
+          <div class="feature-card__icon">📈</div>
+          <div>
+            <p class="feature-card__label">Expert Support</p>
+            <p class="feature-card__text">Dedicated trading guidance and regular performance updates.</p>
+          </div>
+        </article>
+      </div>
+      <div class="hero__socials">
+        <a href="https://github.com/HNTSB15" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+        </a>
+        <a href="https://t.me/HNTSB15" target="_blank" rel="noopener" aria-label="Telegram">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+        </a>
+        <a href="mailto:saifeddine.jskyst15@gmail.com" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 010 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="hero__illustration">
+      <div class="code-card">
+        <div class="code-card__dots">
+          <span></span><span></span><span></span>
+        </div>
+        <pre class="code-card__code"><code><span class="c-keyword">const</span> <span class="c-var">tradeManager</span> = {
+  <span class="c-key">name</span>: <span class="c-str">'Saifeddine'</span>,
+  <span class="c-key">specialty</span>: <span class="c-str">'Forex & Crypto'</span>,
+  <span class="c-key">assets</span>: [
+    <span class="c-str">'EUR/USD'</span>, <span class="c-str">'BTC'</span>,
+    <span class="c-str">'ETH'</span>, <span class="c-str">'Gold'</span>
+  ],
+  <span class="c-key">profitability</span>: <span class="c-keyword">true</span>
+};</code></pre>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- HIGHLIGHTS -->
+  <section class="section highlights" id="highlights">
+    <div class="container">
+      <h2 class="section__title">Proven Trading Results</h2>
+      <div class="highlights__grid">
+        <article class="highlight-card">
+          <div class="highlight-card__icon">🔥</div>
+          <h3>45% Avg Annual Return</h3>
+          <p>Consistent growth through disciplined trading strategies across major markets.</p>
+        </article>
+        <article class="highlight-card">
+          <div class="highlight-card__icon">💎</div>
+          <h3>12 Months Profit</h3>
+          <p>Reliable performance with a proven history of profitable months for investors.</p>
+        </article>
+        <article class="highlight-card">
+          <div class="highlight-card__icon">📊</div>
+          <h3>$2M+ Managed Assets</h3>
+          <p>Experienced account management for high-value forex and crypto portfolios.</p>
+        </article>
+        <article class="highlight-card">
+          <div class="highlight-card__icon">🤝</div>
+          <h3>Trusted Client Support</h3>
+          <p>Transparent reporting, regular updates, and a personal advisor for every account.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- ABOUT -->
+  <section class="section about" id="about">
+    <div class="container">
+      <h2 class="section__title">About Trading Manager</h2>
+      <div class="about__grid">
+        <div class="about__avatar-wrap">
+          <div class="about__avatar">
+            <img src="photo_5962780346778586249_y.jpg" alt="Saifeddine Trading Manager" class="about__avatar-img" />
+          </div>
+          <div class="about__badge">Accepting New Accounts</div>
+        </div>
+        <div class="about__text">
+          <p>
+            Professional trading manager with specialized expertise in forex and cryptocurrency markets.
+            I provide comprehensive account management with transparent reporting and risk-controlled strategies designed to achieve consistent returns.
+          </p>
+          <p>
+            With extensive experience in technical and fundamental analysis, advanced risk management, and behavioral trading psychology,
+            I help investors maximize returns while protecting capital through disciplined execution and strategic planning.
+          </p>
+          <div class="about__stats">
+            <div class="stat">
+              <span class="stat__num">45%</span>
+              <span class="stat__label">Avg Return</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num">5+</span>
+              <span class="stat__label">Years Trading</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num">$2M+</span>
+              <span class="stat__label">Managed Assets</span>
+            </div>
+          </div>
+          <a href="#contact" class="btn btn--primary">Open Your Account</a>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- SKILLS -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <h2 class="section__title">Trading Expertise</h2>
+      <div class="skills__grid">
+
+        <div class="skill-group">
+          <h3 class="skill-group__title">Currency Pairs</h3>
+          <div class="skill-tags">
+            <span class="tag">EUR/USD</span>
+            <span class="tag">GBP/USD</span>
+            <span class="tag">USD/JPY</span>
+            <span class="tag">AUD/USD</span>
+            <span class="tag">NZD/USD</span>
+            <span class="tag">Commodities</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group__title">Cryptocurrencies</h3>
+          <div class="skill-tags">
+            <span class="tag">Bitcoin</span>
+            <span class="tag">Ethereum</span>
+            <span class="tag">Ripple</span>
+            <span class="tag">Litecoin</span>
+            <span class="tag">Cardano</span>
+            <span class="tag">Altcoins</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group__title">Analysis & Strategy</h3>
+          <div class="skill-tags">
+            <span class="tag">Technical Analysis</span>
+            <span class="tag">Fundamental Analysis</span>
+            <span class="tag">Chart Patterns</span>
+            <span class="tag">Support/Resistance</span>
+            <span class="tag">Scalping</span>
+            <span class="tag">Swing Trading</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group__title">Risk Management</h3>
+          <div class="skill-tags">
+            <span class="tag">Position Sizing</span>
+            <span class="tag">Stop Loss Strategy</span>
+            <span class="tag">Portfolio Diversification</span>
+            <span class="tag">Capital Preservation</span>
+            <span class="tag">Leverage Control</span>
+            <span class="tag">Drawdown Management</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+ 
+  <!-- PROJECTS -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <h2 class="section__title">Trading Performance</h2>
+      <div class="projects__grid">
+
+        <article class="project-card">
+          <div class="project-card__header">
+            <div class="project-card__icon">💱</div>
+            <div class="project-card__links">
+              <a href="#" target="_blank" rel="noopener" aria-label="Details">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-card__title">Forex & Crypto Futures</h3>
+          <p class="project-card__desc">
+            Professional futures trading on Forex and crypto markets with sell indicator support for MT4 and MT5.
+            Built for Windows traders who need reliable signals, risk control, and fast execution.
+          </p>
+          <div class="project-card__tags">
+            <span class="tag tag--sm">Futures</span>
+            <span class="tag tag--sm">Forex</span>
+            <span class="tag tag--sm">Crypto</span>
+            <span class="tag tag--sm">MT4/MT5</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__header">
+            <div class="project-card__icon">💹</div>
+            <div class="project-card__links">
+              <a href="#" target="_blank" rel="noopener" aria-label="Details">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-card__title">Forex Spot & Gold</h3>
+          <p class="project-card__desc">
+            Spot trading on Forex with a special focus on Gold (XAUUSD) and precise sell signals.
+            This strategy combines support/resistance, momentum, and automatic MT4/MT5 indicator alerts.
+          </p>
+          <div class="project-card__tags">
+            <span class="tag tag--sm">Forex Spot</span>
+            <span class="tag tag--sm">Gold</span>
+            <span class="tag tag--sm">XAUUSD</span>
+            <span class="tag tag--sm">Sell Signals</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__header">
+            <div class="project-card__icon">📈</div>
+            <div class="project-card__links">
+              <a href="#" target="_blank" rel="noopener" aria-label="Details">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-card__title">US30 & Nasdaq Indices</h3>
+          <p class="project-card__desc">
+            High-conviction index trading on US30 and Nasdaq using macro trend analysis and breakout signals.
+            Optimized for Windows MT4/MT5 traders seeking scalable index strategies.
+          </p>
+          <div class="project-card__tags">
+            <span class="tag tag--sm">US30</span>
+            <span class="tag tag--sm">Nasdaq</span>
+            <span class="tag tag--sm">Indices</span>
+            <span class="tag tag--sm">Breakouts</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__header">
+            <div class="project-card__icon">🧠</div>
+            <div class="project-card__links">
+              <a href="#" target="_blank" rel="noopener" aria-label="Details">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-card__title">MT4/MT5 Sell Indicator Pack</h3>
+          <p class="project-card__desc">
+            Custom sell indicators for MT4 and MT5 on Windows, designed for Forex, crypto futures, gold, and indices.
+            Includes alert-ready setups and easy integration for traders who want automated entry guidance.
+          </p>
+          <div class="project-card__tags">
+            <span class="tag tag--sm">MT4</span>
+            <span class="tag tag--sm">MT5</span>
+            <span class="tag tag--sm">Sell Indicator</span>
+            <span class="tag tag--sm">Windows</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section experience" id="experience">
+    <div class="container">
+      <h2 class="section__title">Trading Journey</h2>
+      <div class="timeline">
+ 
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__card">
+            <div class="timeline__header">
+              <div>
+                <h3 class="timeline__role">Professional Trading Manager</h3>
+                <p class="timeline__company">Saifeddine Trading</p>
+              </div>
+              <span class="timeline__period">2019 – Present</span>
+            </div>
+            <ul class="timeline__bullets">
+              <li>Manage $2M+ in Assets Under Management (AUM) across forex and cryptocurrency markets</li>
+              <li>Achieved 45% average annual returns with consistent performance across multiple strategies</li>
+              <li>Developed proprietary trading strategies combining technical analysis with risk management</li>
+              <li>Mentored 15+ aspiring traders and built a community of 500+ followers</li>
+            </ul>
+            <div class="skill-tags" style="margin-top:12px">
+              <span class="tag tag--sm">Forex Trading</span>
+              <span class="tag tag--sm">Cryptocurrency</span>
+              <span class="tag tag--sm">Risk Management</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__card">
+            <div class="timeline__header">
+              <div>
+                <h3 class="timeline__role">Day Trader & Algorithm Developer</h3>
+                <p class="timeline__company">Self-Employed</p>
+              </div>
+              <span class="timeline__period">2016 – 2019</span>
+            </div>
+            <ul class="timeline__bullets">
+              <li>Started with micro accounts and scaled to managing $500k+ personal and client capital</li>
+              <li>Developed Python-based trading algorithms for automated entry/exit signals</li>
+              <li>Specialized in scalping and swing trading on major currency pairs</li>
+              <li>Achieved 38% average annual returns through disciplined risk management</li>
+            </ul>
+            <div class="skill-tags" style="margin-top:12px">
+              <span class="tag tag--sm">Python</span>
+              <span class="tag tag--sm">Day Trading</span>
+              <span class="tag tag--sm">Technical Analysis</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__card">
+            <div class="timeline__header">
+              <div>
+                <h3 class="timeline__role">Financial Education & Certification</h3>
+                <p class="timeline__company">Various Institutions</p>
+              </div>
+              <span class="timeline__period">2015 – 2016</span>
+            </div>
+            <ul class="timeline__bullets">
+              <li>Completed comprehensive forex trading course and earned professional certification</li>
+              <li>Studied technical analysis, fundamental analysis, and trading psychology</li>
+              <li>Practiced on demo accounts for 6+ months before trading with real capital</li>
+              <li>Built foundational knowledge in risk management and money management principles</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CLIENTS / TESTIMONIALS -->
+  <section class="section testimonials" id="clients">
+    <div class="container">
+      <h2 class="section__title">Client Results</h2>
+      <div class="testimonials__grid">
+        <!-- loaded from database -->
+      </div>
+
+      <!-- Review submission form -->
+      <div class="review-form-wrap">
+        <h3 class="review-form__title">Share Your Experience</h3>
+        <p class="review-form__sub">Are you a client? Tell others about your results.</p>
+        <form class="review-form" id="reviewForm">
+          <div class="review-form__row">
+            <div class="form-group">
+              <label for="r-name">Your Name</label>
+              <input type="text" id="r-name" name="name" placeholder="e.g. Ahmed K." required />
+            </div>
+            <div class="form-group">
+              <label for="r-country">Country</label>
+              <input type="text" id="r-country" name="country" placeholder="e.g. Algeria" required />
+            </div>
+            <div class="form-group">
+              <label for="r-return">Your Return %</label>
+              <input type="text" id="r-return" name="return_pct" placeholder="e.g. +42%" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="r-message">Your Review</label>
+            <textarea id="r-message" name="message" rows="4" placeholder="Share your experience with Saifeddine's trading management..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary">Submit Review</button>
+          <p class="form__success" id="reviewSuccess">Thank you! Your review has been submitted for approval.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <h2 class="section__title">Ready to Start Trading?</h2>
+      <p class="contact__sub">
+        Interested in opening a managed account or learning more about our trading strategies? Let's connect!
+      </p>
+      <div class="contact__grid">
+        <form class="contact__form" id="contactForm">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell us about your investment goals..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">Send Inquiry</button>
+          <p class="form__success" id="formSuccess">Thank you! I'll get back to you within 24 hours.</p>
+        </form>
+        <div class="contact__info">
+          <div class="contact__item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span>saifeddine.jskyst15@gemail.com</span>
+          </div>
+          <div class="contact__item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Bejaia, Algeria</span>
+          </div>
+          <div class="contact__item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span>Accepting new managed accounts</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>Saifeddine Trading Manager &nbsp;·&nbsp; Professional Forex & Crypto Trading &nbsp;·&nbsp; 2026</p>
+      <p class="footer__note">Transparent. Profitable. Professional.</p>
+    </div>
+  </footer>
+ 
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
