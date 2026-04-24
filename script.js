@@ -189,12 +189,36 @@ async function loadClients() {
   applyReveal('.testimonial-card');
 }
 
-// Visitor counter — only counts unique visitors (once per browser)
+// Visitor tracker — collects device, location, IP, browser details
 async function trackVisitor() {
   if (!localStorage.getItem('visited')) {
-    await db.from('visitors').insert({});
+    let geo = {};
+    try {
+      const res = await fetch('https://ipapi.co/json/');
+      geo = await res.json();
+    } catch(e) {}
+
+    const ua = navigator.userAgent;
+    const device   = /Mobile|Android|iPhone|iPad/i.test(ua) ? 'Mobile' : 'Desktop';
+    const browser  = /Edg/.test(ua) ? 'Edge'
+                   : /Chrome/.test(ua) ? 'Chrome'
+                   : /Firefox/.test(ua) ? 'Firefox'
+                   : /Safari/.test(ua) ? 'Safari' : 'Other';
+
+    await db.from('visitors').insert({
+      ip          : geo.ip         || 'unknown',
+      country     : geo.country_name || 'unknown',
+      city        : geo.city       || 'unknown',
+      region      : geo.region     || 'unknown',
+      device,
+      browser,
+      screen_size : `${window.screen.width}x${window.screen.height}`,
+      language    : navigator.language,
+      referrer    : document.referrer || 'direct'
+    });
     localStorage.setItem('visited', '1');
   }
+
   const { count } = await db.from('visitors').select('*', { count: 'exact', head: true });
   const el = document.getElementById('visitorCount');
   if (el && count !== null) el.textContent = count.toLocaleString();
