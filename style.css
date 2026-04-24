@@ -937,7 +937,7 @@ body.light-mode .nav.scrolled {
     justify-content: center;
     font-size: 1.4rem;
     z-index: 9998;
-    padding-top: 80px;
+    padding: 0;
   }
   .nav__links.open a {
     width: 280px;
