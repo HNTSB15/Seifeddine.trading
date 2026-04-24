@@ -881,6 +881,18 @@ body.light-mode .nav.scrolled {
 .footer p { color: var(--text3); font-size: .85rem; }
 .footer strong { color: var(--text2); }
 .footer__note { margin-top: 6px; font-size: .78rem; }
+.footer__visitors {
+  margin-top: 10px;
+  font-size: .82rem;
+  color: var(--accent2);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--accent-glow);
+  border: 1px solid var(--border);
+  padding: 4px 14px;
+  border-radius: 20px;
+}
  
 /* ── Responsive ── */
 @media (max-width: 900px) {

@@ -189,6 +189,18 @@ async function loadClients() {
   applyReveal('.testimonial-card');
 }
 
+// Visitor counter — only counts unique visitors (once per browser)
+async function trackVisitor() {
+  if (!localStorage.getItem('visited')) {
+    await db.from('visitors').insert({});
+    localStorage.setItem('visited', '1');
+  }
+  const { count } = await db.from('visitors').select('*', { count: 'exact', head: true });
+  const el = document.getElementById('visitorCount');
+  if (el && count !== null) el.textContent = count.toLocaleString();
+}
+trackVisitor();
+
 // Boot all loaders
 loadStats();
 loadHighlights();
@@ -201,10 +213,10 @@ document.getElementById('reviewForm').addEventListener('submit', async e => {
   e.preventDefault();
   const btn     = e.target.querySelector('button[type="submit"]');
   const success = document.getElementById('reviewSuccess');
-  const name       = e.target.name.value.trim();
-  const country    = e.target.country.value.trim();
-  const return_pct = e.target.return_pct.value.trim();
-  const message    = e.target.message.value.trim();
+  const name       = document.getElementById('r-name').value.trim();
+  const country    = document.getElementById('r-country').value.trim();
+  const return_pct = document.getElementById('r-return').value.trim();
+  const message    = document.getElementById('r-message').value.trim();
 
   btn.textContent = 'Submitting...';
   btn.disabled = true;
