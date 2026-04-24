@@ -238,12 +238,20 @@ document.getElementById('contactForm').addEventListener('submit', async e => {
   btn.textContent = 'Sending...';
   btn.disabled = true;
 
-  const { error } = await db.from('contacts').insert({ name, email, message });
+  const [dbResult, emailResult] = await Promise.allSettled([
+    db.from('contacts').insert({ name, email, message }),
+    emailjs.send('service_442hyjy', 'template_31wiijb', {
+      from_name: name,
+      from_email: email,
+      message: message
+    })
+  ]);
 
   btn.textContent = 'Send Inquiry';
   btn.disabled = false;
 
-  if (error) {
+  const failed = dbResult.value?.error && emailResult.status === 'rejected';
+  if (failed) {
     success.textContent = 'Something went wrong. Please try again.';
     success.style.color = '#ef4444';
   } else {

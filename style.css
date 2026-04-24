@@ -896,8 +896,19 @@ body.light-mode .nav.scrolled {
   .about__grid { grid-template-columns: 1fr; text-align: center; }
   .about__stats { justify-content: center; }
   .about__avatar { margin: 0 auto 16px; }
-  .contact__grid { grid-template-columns: 1fr; }
-  .contact__info { flex-direction: row; flex-wrap: wrap; gap: 20px; }
+  .contact__grid { grid-template-columns: 1fr; gap: 32px; }
+  .contact__info { flex-direction: column; gap: 16px; }
+  .contact__item {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 14px 18px;
+    gap: 12px;
+  }
+  .contact__item span {
+    font-size: .9rem;
+    word-break: break-all;
+  }
 }
  
 @media (max-width: 900px) {
