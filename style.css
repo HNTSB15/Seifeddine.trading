@@ -930,7 +930,7 @@ body.light-mode .nav.scrolled {
     display: flex;
     flex-direction: column;
     gap: 25px;
-    position: fixed;
+    position: unset;
     inset: 0;
     background: var(--bg);
     align-items: center;
