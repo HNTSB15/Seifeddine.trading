@@ -1,4 +1,4 @@
-/* ── Reset & Base ── */
+/* Reset & Base */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
  
 :root {
@@ -54,15 +54,15 @@ body {
 a { color: inherit; text-decoration: none; }
 ul { list-style: none; }
  
-/* ── Scrollbar ── */
+/* Scrollbar */
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: var(--bg); }
 ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
  
-/* ── Container ── */
+/* Container */
 .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
  
-/* ── Section ── */
+/* Section */
 .section { padding: 100px 0; }
 .section__title {
   font-size: clamp(1.6rem, 4vw, 2.2rem);
@@ -80,7 +80,7 @@ ul { list-style: none; }
   border-radius: 2px;
 }
  
-/* ── Buttons ── */
+/* Buttons */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -114,7 +114,7 @@ ul { list-style: none; }
 }
 .btn--full { width: 100%; justify-content: center; }
  
-/* ── Tags ── */
+/* Tags */
 .tag {
   display: inline-block;
   background: var(--bg3);
@@ -129,7 +129,7 @@ ul { list-style: none; }
 .tag:hover { border-color: var(--accent); background: var(--accent-glow); }
 .tag--sm { padding: 4px 10px; font-size: .78rem; }
  
-/* ── NAV ── */
+/* NAV */
 .nav {
   position: fixed;
   top: 0; left: 0; right: 0;
@@ -237,6 +237,8 @@ body.light-mode .nav.scrolled {
   justify-content: center;
   transition: var(--transition);
   margin-left: 16px;
+  position: relative;
+  z-index: 10000;
 }
 
 .theme-toggle:hover {
@@ -264,8 +266,17 @@ body.light-mode .nav.scrolled {
   border-radius: 2px;
   transition: var(--transition);
 }
+.nav__toggle.is-open span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.nav__toggle.is-open span:nth-child(2) {
+  opacity: 0;
+}
+.nav__toggle.is-open span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
  
-/* ── HERO ── */
+/* HERO */
 .hero {
   min-height: 100vh;
   display: grid;
@@ -482,7 +493,7 @@ body.light-mode .nav.scrolled {
 .c-key     { color: #f07178; }
 .c-str     { color: #c3e88d; }
  
-/* ── ABOUT ── */
+/* ABOUT */
 .about { background: var(--bg2); }
 .about__grid {
   display: grid;
@@ -558,7 +569,7 @@ body.light-mode .nav.scrolled {
   color: var(--text3);
 }
  
-/* ── SKILLS ── */
+/* SKILLS */
 .skills { background: var(--bg); }
 .skills__grid {
   display: grid;
@@ -587,7 +598,7 @@ body.light-mode .nav.scrolled {
 }
 .skill-tags { display: flex; flex-wrap: wrap; gap: 8px; }
  
-/* ── PROJECTS ── */
+/* PROJECTS */
 .projects { background: var(--bg2); }
 .projects__grid {
   display: grid;
@@ -635,7 +646,7 @@ body.light-mode .nav.scrolled {
   flex: 1;
 }
 
-/* ── EXPERIENCE / TIMELINE ── */
+/* EXPERIENCE / TIMELINE */
 .experience { background: var(--bg); }
 .timeline { position: relative; padding-left: 28px; }
 .timeline::before {
@@ -701,13 +712,13 @@ body.light-mode .nav.scrolled {
   position: relative;
 }
 .timeline__bullets li::before {
-  content: '▹';
+  content: '>';
   position: absolute;
   left: 0;
   color: var(--accent);
 }
  
-/* ── CONTACT ── */
+/* CONTACT */
 .contact { background: var(--bg2); }
 .contact__sub {
   color: var(--text2);
@@ -763,7 +774,7 @@ body.light-mode .nav.scrolled {
 }
 .contact__item svg { width: 20px; height: 20px; color: var(--accent2); flex-shrink: 0; }
  
-/* ── TESTIMONIALS ── */
+/* TESTIMONIALS */
 .testimonials { background: var(--bg); }
 .testimonials__grid {
   display: grid;
@@ -838,7 +849,7 @@ body.light-mode .nav.scrolled {
   border-radius: 20px;
 }
 
-/* ── REVIEW FORM ── */
+/* REVIEW FORM */
 .review-form-wrap {
   margin-top: 72px;
   background: var(--card);
@@ -871,7 +882,7 @@ body.light-mode .nav.scrolled {
   .review-form-wrap { padding: 24px; }
 }
 
-/* ── FOOTER ── */
+/* FOOTER */
 .footer {
   background: var(--bg);
   border-top: 1px solid var(--border);
@@ -881,6 +892,18 @@ body.light-mode .nav.scrolled {
 .footer p { color: var(--text3); font-size: .85rem; }
 .footer strong { color: var(--text2); }
 .footer__note { margin-top: 6px; font-size: .78rem; }
+.footer__risk,
+.footer__privacy {
+  max-width: 760px;
+  margin: 10px auto 0;
+  color: var(--text2);
+  font-size: .78rem;
+  line-height: 1.55;
+}
+.footer__privacy {
+  color: var(--text3);
+  margin-top: 6px;
+}
 .footer__visitors {
   margin-top: 10px;
   font-size: .82rem;
@@ -894,7 +917,7 @@ body.light-mode .nav.scrolled {
   border-radius: 20px;
 }
  
-/* ── Responsive ── */
+/* Responsive */
 @media (max-width: 900px) {
   .hero {
     grid-template-columns: 1fr;
@@ -937,7 +960,8 @@ body.light-mode .nav.scrolled {
     justify-content: center;
     font-size: 1.4rem;
     z-index: 9998;
-    padding: 0;
+    padding: 96px 24px 32px;
+    overflow-y: auto;
   }
   .nav__links.open a {
     width: 280px;

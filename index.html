@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Saifeddine – Forex & Crypto Trading Manager</title>
+  <title>Saifeddine - Forex & Crypto Trading Manager</title>
   <link rel="icon" type="image/webp" href="Logo.webp" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,18 +11,17 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
- 
   <!-- NAV -->
   <nav class="nav" id="navbar">
     <div class="nav__inner">
-      <a href="#" class="nav__logo" aria-label="Saifeddine Boumaza Trading">
+      <a href="#home" class="nav__logo" aria-label="Saifeddine Boumaza Trading">
         <img src="Logo.webp" alt="Saifeddine Trading Logo" class="nav__logo-img" />
         <div class="nav__logo-text">
           <span class="nav__logo-name">Saifeddine</span>
           <span class="nav__logo-sub">Forex &amp; Crypto</span>
         </div>
       </a>
-      <ul class="nav__links">
+      <ul class="nav__links" id="primaryNav">
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
@@ -43,7 +42,7 @@
           <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
         </svg>
       </button>
-      <button type="button" class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+      <button type="button" class="nav__toggle" aria-label="Toggle menu" aria-controls="primaryNav" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
@@ -61,30 +60,30 @@
         <span class="hero__role" id="typed-role"></span><span class="cursor">|</span>
       </div>
       <p class="hero__bio">
-        Professional forex and cryptocurrency trading manager with proven track record in 
-        managing investor accounts and generating consistent returns through strategic trading.
+        Professional forex and cryptocurrency trading manager focused on transparent reporting,
+        disciplined risk management, and strategic execution across active markets.
       </p>
       <div class="hero__cta">
         <a href="#projects" class="btn btn--primary">View Trading Records</a>
-        <a href="#contact" class="btn btn--outline">Invest Now</a>
+        <a href="#contact" class="btn btn--outline">Request Account Info</a>
       </div>
       <div class="hero__features">
         <article class="feature-card">
-          <div class="feature-card__icon">🚀</div>
+          <div class="feature-card__icon">&#128640;</div>
           <div>
             <p class="feature-card__label">Fast Execution</p>
             <p class="feature-card__text">Trade with speed and precision across forex and crypto markets.</p>
           </div>
         </article>
         <article class="feature-card">
-          <div class="feature-card__icon">💼</div>
+          <div class="feature-card__icon">&#128188;</div>
           <div>
             <p class="feature-card__label">Trusted Strategy</p>
-            <p class="feature-card__text">Proven risk-managed systems designed for consistent returns.</p>
+            <p class="feature-card__text">Risk-managed systems designed for disciplined market decisions.</p>
           </div>
         </article>
         <article class="feature-card">
-          <div class="feature-card__icon">📈</div>
+          <div class="feature-card__icon">&#128200;</div>
           <div>
             <p class="feature-card__label">Expert Support</p>
             <p class="feature-card__text">Dedicated trading guidance and regular performance updates.</p>
@@ -115,7 +114,7 @@
     <span class="c-str">'EUR/USD'</span>, <span class="c-str">'BTC'</span>,
     <span class="c-str">'ETH'</span>, <span class="c-str">'Gold'</span>
   ],
-  <span class="c-key">profitability</span>: <span class="c-keyword">true</span>
+  <span class="c-key">riskManaged</span>: <span class="c-keyword">true</span>
 };</code></pre>
       </div>
     </div>
@@ -124,27 +123,27 @@
   <!-- HIGHLIGHTS -->
   <section class="section highlights" id="highlights">
     <div class="container">
-      <h2 class="section__title">Proven Trading Results</h2>
+      <h2 class="section__title">Trading Results &amp; Process</h2>
       <div class="highlights__grid">
         <article class="highlight-card">
-          <div class="highlight-card__icon">🔥</div>
-          <h3>45% Avg Annual Return</h3>
-          <p>Consistent growth through disciplined trading strategies across major markets.</p>
+          <div class="highlight-card__icon">&#128293;</div>
+          <h3>45% Historical Avg Return</h3>
+          <p>Reported historical annual average for tracked strategies. Results vary and are not guaranteed.</p>
         </article>
         <article class="highlight-card">
-          <div class="highlight-card__icon">💎</div>
-          <h3>12 Months Profit</h3>
-          <p>Reliable performance with a proven history of profitable months for investors.</p>
+          <div class="highlight-card__icon">&#128142;</div>
+          <h3>12 Months Tracked</h3>
+          <p>Monthly performance monitoring with clear reporting for account holders.</p>
         </article>
         <article class="highlight-card">
-          <div class="highlight-card__icon">📊</div>
-          <h3>$2M+ Managed Assets</h3>
-          <p>Experienced account management for high-value forex and crypto portfolios.</p>
+          <div class="highlight-card__icon">&#128202;</div>
+          <h3>$2K+ Managed Capital</h3>
+          <p>Focused account management for growing forex and crypto portfolios.</p>
         </article>
         <article class="highlight-card">
-          <div class="highlight-card__icon">🤝</div>
-          <h3>Trusted Client Support</h3>
-          <p>Transparent reporting, regular updates, and a personal advisor for every account.</p>
+          <div class="highlight-card__icon">&#129309;</div>
+          <h3>Transparent Client Support</h3>
+          <p>Transparent reporting, regular updates, and direct support for every account.</p>
         </article>
       </div>
     </div>
@@ -164,11 +163,11 @@
         <div class="about__text">
           <p>
             Professional trading manager with specialized expertise in forex and cryptocurrency markets.
-            I provide comprehensive account management with transparent reporting and risk-controlled strategies designed to achieve consistent returns.
+            I provide account management with transparent reporting and risk-controlled strategies designed for disciplined execution.
           </p>
           <p>
             With extensive experience in technical and fundamental analysis, advanced risk management, and behavioral trading psychology,
-            I help investors maximize returns while protecting capital through disciplined execution and strategic planning.
+            I help investors pursue market opportunities while managing downside risk through disciplined execution and strategic planning.
           </p>
           <div class="about__stats">
             <div class="stat">
@@ -180,11 +179,11 @@
               <span class="stat__label">Years Trading</span>
             </div>
             <div class="stat">
-              <span class="stat__num">$2M+</span>
-              <span class="stat__label">Managed Assets</span>
+              <span class="stat__num">$2K+</span>
+              <span class="stat__label">Managed Capital</span>
             </div>
           </div>
-          <a href="#contact" class="btn btn--primary">Open Your Account</a>
+          <a href="#contact" class="btn btn--primary">Request Account Info</a>
         </div>
       </div>
     </div>
@@ -256,9 +255,9 @@
 
         <article class="project-card">
           <div class="project-card__header">
-            <div class="project-card__icon">💱</div>
+            <div class="project-card__icon">&#128177;</div>
             <div class="project-card__links">
-              <a href="#" target="_blank" rel="noopener" aria-label="Details">
+              <a href="#contact" aria-label="Ask for details">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
               </a>
             </div>
@@ -278,9 +277,9 @@
 
         <article class="project-card">
           <div class="project-card__header">
-            <div class="project-card__icon">💹</div>
+            <div class="project-card__icon">&#128185;</div>
             <div class="project-card__links">
-              <a href="#" target="_blank" rel="noopener" aria-label="Details">
+              <a href="#contact" aria-label="Ask for details">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
               </a>
             </div>
@@ -300,9 +299,9 @@
 
         <article class="project-card">
           <div class="project-card__header">
-            <div class="project-card__icon">📈</div>
+            <div class="project-card__icon">&#128200;</div>
             <div class="project-card__links">
-              <a href="#" target="_blank" rel="noopener" aria-label="Details">
+              <a href="#contact" aria-label="Ask for details">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
               </a>
             </div>
@@ -322,9 +321,9 @@
 
         <article class="project-card">
           <div class="project-card__header">
-            <div class="project-card__icon">🧠</div>
+            <div class="project-card__icon">&#129504;</div>
             <div class="project-card__links">
-              <a href="#" target="_blank" rel="noopener" aria-label="Details">
+              <a href="#contact" aria-label="Ask for details">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
               </a>
             </div>
@@ -360,11 +359,11 @@
                 <h3 class="timeline__role">Professional Trading Manager</h3>
                 <p class="timeline__company">Saifeddine Trading</p>
               </div>
-              <span class="timeline__period">2019 – Present</span>
+              <span class="timeline__period">2019 - Present</span>
             </div>
             <ul class="timeline__bullets">
-              <li>Manage $2M+ in Assets Under Management (AUM) across forex and cryptocurrency markets</li>
-              <li>Achieved 45% average annual returns with consistent performance across multiple strategies</li>
+              <li>Manage $2K+ in client capital across forex and cryptocurrency markets</li>
+              <li>Track historical annual performance with disciplined risk management across multiple strategies</li>
               <li>Developed proprietary trading strategies combining technical analysis with risk management</li>
               <li>Mentored 15+ aspiring traders and built a community of 500+ followers</li>
             </ul>
@@ -384,13 +383,13 @@
                 <h3 class="timeline__role">Day Trader & Algorithm Developer</h3>
                 <p class="timeline__company">Self-Employed</p>
               </div>
-              <span class="timeline__period">2016 – 2019</span>
+              <span class="timeline__period">2016 - 2019</span>
             </div>
             <ul class="timeline__bullets">
-              <li>Started with micro accounts and scaled to managing $500k+ personal and client capital</li>
+              <li>Started with micro accounts and built experience managing personal and client capital</li>
               <li>Developed Python-based trading algorithms for automated entry/exit signals</li>
               <li>Specialized in scalping and swing trading on major currency pairs</li>
-              <li>Achieved 38% average annual returns through disciplined risk management</li>
+              <li>Built a disciplined approach around risk management, journaling, and trade review</li>
             </ul>
             <div class="skill-tags" style="margin-top:12px">
               <span class="tag tag--sm">Python</span>
@@ -408,7 +407,7 @@
                 <h3 class="timeline__role">Financial Education & Certification</h3>
                 <p class="timeline__company">Various Institutions</p>
               </div>
-              <span class="timeline__period">2015 – 2016</span>
+              <span class="timeline__period">2015 - 2016</span>
             </div>
             <ul class="timeline__bullets">
               <li>Completed comprehensive forex trading course and earned professional certification</li>
@@ -439,20 +438,20 @@
           <div class="review-form__row">
             <div class="form-group">
               <label for="r-name">Your Name</label>
-              <input type="text" id="r-name" name="name" placeholder="e.g. Ahmed K." required />
+              <input type="text" id="r-name" name="name" placeholder="e.g. Ahmed K." autocomplete="name" maxlength="80" required />
             </div>
             <div class="form-group">
               <label for="r-country">Country</label>
-              <input type="text" id="r-country" name="country" placeholder="e.g. Algeria" required />
+              <input type="text" id="r-country" name="country" placeholder="e.g. Algeria" autocomplete="country-name" maxlength="60" required />
             </div>
             <div class="form-group">
               <label for="r-return">Your Return %</label>
-              <input type="text" id="r-return" name="return_pct" placeholder="e.g. +42%" required />
+              <input type="text" id="r-return" name="return_pct" placeholder="e.g. +42%" maxlength="20" required />
             </div>
           </div>
           <div class="form-group">
             <label for="r-message">Your Review</label>
-            <textarea id="r-message" name="message" rows="4" placeholder="Share your experience with Saifeddine's trading management..." required></textarea>
+            <textarea id="r-message" name="message" rows="4" placeholder="Share your experience with Saifeddine's trading management..." maxlength="600" required></textarea>
           </div>
           <button type="submit" class="btn btn--primary">Submit Review</button>
           <p class="form__success" id="reviewSuccess">Thank you! Your review has been submitted for approval.</p>
@@ -464,23 +463,23 @@
   <!-- CONTACT -->
   <section class="section contact" id="contact">
     <div class="container">
-      <h2 class="section__title">Ready to Start Trading?</h2>
+      <h2 class="section__title">Ready to Discuss Trading?</h2>
       <p class="contact__sub">
-        Interested in opening a managed account or learning more about our trading strategies? Let's connect!
+        Interested in managed account information or learning more about the trading process? Let's connect.
       </p>
       <div class="contact__grid">
         <form class="contact__form" id="contactForm">
           <div class="form-group">
             <label for="name">Full Name</label>
-            <input type="text" id="name" name="name" placeholder="Your name" required />
+            <input type="text" id="name" name="name" placeholder="Your name" autocomplete="name" maxlength="80" required />
           </div>
           <div class="form-group">
             <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+            <input type="email" id="email" name="email" placeholder="your@email.com" autocomplete="email" maxlength="120" required />
           </div>
           <div class="form-group">
             <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" placeholder="Tell us about your investment goals..." required></textarea>
+            <textarea id="message" name="message" rows="5" placeholder="Tell us about your investment goals..." maxlength="1000" required></textarea>
           </div>
           <button type="submit" class="btn btn--primary btn--full">Send Inquiry</button>
           <p class="form__success" id="formSuccess">Thank you! I'll get back to you within 24 hours.</p>
@@ -488,7 +487,7 @@
         <div class="contact__info">
           <div class="contact__item">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            <span>saifeddine.jskyst15@gemail.com</span>
+            <span>saifeddine.jskyst15@gmail.com</span>
           </div>
           <div class="contact__item">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
@@ -506,15 +505,16 @@
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
-      <p>Saifeddine Trading Manager &nbsp;·&nbsp; Professional Forex & Crypto Trading &nbsp;·&nbsp; 2026</p>
-      <p class="footer__note">Transparent. Profitable. Professional.</p>
-      <p class="footer__visitors">👁 <span id="visitorCount">...</span> visitors</p>
+      <p>Saifeddine Trading Manager &nbsp;&middot;&nbsp; Professional Forex &amp; Crypto Trading &nbsp;&middot;&nbsp; 2026</p>
+      <p class="footer__note">Transparent. Risk-managed. Professional.</p>
+      <p class="footer__risk">Risk warning: Forex and crypto trading involve significant risk. Past performance is not a guarantee of future results.</p>
+      <p class="footer__privacy">Privacy note: Visitor count stores basic browser/device info only; this page does not request IP geolocation.</p>
+      <p class="footer__visitors">&#128065; <span id="visitorCount">...</span> visitors</p>
     </div>
   </footer>
  
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-  <script>emailjs.init('RlQp_bILdnIDbvhv_');</script>
   <script src="script.js"></script>
 </body>
 </html>
